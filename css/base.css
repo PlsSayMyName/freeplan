@@ -11,7 +11,7 @@ html {
 }
 body {
 	box-sizing: border-box;
-	font-family: 	var(--OpenSans);
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
 }
 .wrapper {
@@ -30,7 +30,7 @@ body {
 	border: none;
 	font-weight: 800;
 	line-height: 1.8rem;
-	letter-spacing: 0.15rem;
+	letter-spacing: .15rem;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -41,7 +41,7 @@ body {
 	font-size: 2rem;
 }
 :root {
-	--OpenSans: "OpenSans-Regular", sans-serif;
+	/* --OpenSans: "OpenSans-Regular", sans-serif; */
 	--accent-color: #EC8211;
 	--green-color: #87C34B;
 	--purple-color: #AD3572;
@@ -60,7 +60,7 @@ body {
 	font-display: swap;
 }
 
-@font-face {
+/* @font-face {
 	font-family: 'OpenSans-Regular';
 	src: url('../fonts/OpenSans-Regular/OpenSans-Regular.eot');
 	src: url('../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
@@ -71,7 +71,7 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-}
+} */
 
 [class^="icon-"],
 [class*=" icon-"] {
