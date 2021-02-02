@@ -9,6 +9,24 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/favico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/favico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/favico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/favico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/favico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/favico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/favico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/favico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/images/favico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favico/favicon-16x16.png">
+	<link rel="manifest" href="/images/favico/manifest.json">
+	<meta name="msapplication-TileColor" content="#EC8211">
+	<meta name="msapplication-TileImage" content="/images/favico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#EC8211">
+
 </head>
 
 <body>
@@ -101,7 +119,7 @@
 								</span>
 
 								<div class="button-box">
-									<button class="button">Расчитать стоимость <span class="icon-right-arrow"></span></button>
+									<button type="button" class="button click-button-form">Расчитать стоимость <span class="icon-right-arrow"></span></button>
 								</div>
 							</div>
 						</div>
@@ -479,7 +497,7 @@
 						<a href="tel:+375257411166">+375(25) 741-11-66</a>
 						<p>г. Минск, Слободская 29-31</p>
 						<a href="mailto:info@freeplan.by">info@freeplan.by</a>
-						<button class="button">Рассчитать стоимость <span class="icon-right-arrow"></span></button>
+						<button type="button" class="button click-button-form">Рассчитать стоимость<span class="icon-right-arrow"></span></button>
 					</div>
 					<div class="footer-logos">
 						<img src="images/Visa.png" alt="Visa logo">
@@ -490,6 +508,94 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-form-wrapper form-1" style="display: none;">
+		<div class="form-body">
+			<span class="icon-close-button close-modal"></span>
+			<form action="#" class="modal-form">
+				<h2 class="form-heading">РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕГО ДИЗАЙН-ПРОЕКТА</h2>
+				<span class="form-paragraph">1. Укажите тип помещений</span>
+				<div class="form-group">
+					<input class="form-group-input" type="radio" name="form-check" id="check-1" value="Квартира">
+					<label class="form-group-label" for="check-1"><span class="form-group-radio-button"></span> Квартира</label>
+				</div>
+				<div class="form-group">
+					<input class="form-group-input" type="radio" name="form-check" id="check-2" value="Частный дом">
+					<label class="form-group-label" for="check-2"><span class="form-group-radio-button"></span>Частный дом</label>
+				</div>
+				<div class="form-group">
+					<input class="form-group-input" type="radio" name="form-check" id="check-3" value="Частный дом">
+					<label class="form-group-label" for="check-3"><span class="form-group-radio-button"></span>Частный дом</label>
+				</div>
+				<div class="attention form-attention">
+					<p class="attention-text">
+						*Мы не передаем ваши персональные данные третьим лицам
+					</p>
+					<p class="attention-text">
+						**Подавая заявку, вы принимаете условия нашей <a href="#">политики конфиденциальности</a>
+					</p>
+				</div>
+				<div class="form-bottom">
+					<span>ШАГ 1 ИЗ 3</span>
+					<button disabled id="next" type="button" class="button form-button next-button">Вперед <span class="icon-right-arrow"></span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal-form-wrapper form-2" style="display: none;">
+		<div class="form-body">
+			<span class="icon-close-button close-modal"></span>
+			<form action="#" class="modal-form modal-form-1">
+				<h2 class="form-heading">РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕГО ДИЗАЙН-ПРОЕКТА</h2>
+				<span class="form-paragraph">2. Укажите площадь помещений дизайн-проекта, м2</span>
+				<input onkeyup="next.disabled = this.value ? false : 'disabled';" id="number" class="form-group-input" type="text" name="area" placeholder="Площадь помещения, м2">
+				<div class="attention form-attention">
+					<p class="attention-text">
+						*Мы не передаем ваши персональные данные третьим лицам
+					</p>
+					<p class="attention-text">
+						**Подавая заявку, вы принимаете условия нашей <a href="#">политики конфиденциальности</a>
+					</p>
+				</div>
+				<div class="form-bottom">
+					<span>ШАГ 2 ИЗ 3</span>
+					<div class="button-box">
+						<button type="button" class="button form-button previous-button"><span class="icon-right-arrow"></span>Назад</button>
+						<button disabled id="next" name="nextbtn" type="button" class="button form-button next-button">Вперед<span class="icon-right-arrow"></span></button>
+					</div>
+			</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal-form-wrapper form-3" style="display: none;">
+		<div class="form-body">
+			<span class="icon-close-button close-modal"></span>
+			<form action="#" class="modal-form">
+				<h2 class="form-heading">РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕГО ДИЗАЙН-ПРОЕКТА</h2>
+				<span class="form-paragraph">3. Ваши данные</span>
+				<input onkeyup="check();" id="name" class="form-group-input" type="text" name="your-name" placeholder="Ваше имя">
+				<input onkeyup="check();" id="mobile-number" class="form-group-input" type="text" name="phone" placeholder="Ваш e-mail / телефон">
+				<div class="form-button-main-box">
+						<button disabled id="next" type="submit" class="button form-button-main success-button">РАССЧИТАТЬ СТОИМОСТЬ</button>
+				</div>
+				<div class="form-bottom">
+					<span>ШАГ 3 ИЗ 3</span>
+					<button type="button" class="button form-button previous-button"><span class="icon-right-arrow"></span>Назад</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal-form-wrapper form-success form-4" style="display: none;">
+		<div class="form-body">
+			<span class="icon-close-button close-modal"></span>
+			<div class="icon-box">
+				<span class="icon-hand-shake"></span>
+			</div>
+			<h2 class="form-heading">БЛАГОДАРИМ ЗА ЗАЯВКУ!</h2>
+			<span class="form-paragraph">Наш консультант свяжется с вами в течении 24 часов и проконсультирует по всем интересующим вопросам</span>
+		</div>
+	</div>
+
+	<script defer src="/js/script.js"></script>
 </body>
 
 </html>

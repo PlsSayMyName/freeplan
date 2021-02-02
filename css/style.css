@@ -81,7 +81,7 @@ header .wrapper .inner-wrapper .info a:first-child {
 header .wrapper .inner-wrapper .info a:nth-child(2){
 	color: #000;
 	text-decoration: none;
-	padding-left: 3.3rem;
+	padding-left: 2.3rem;
 	letter-spacing: 0;
 	margin-top: -.5rem;
 }
@@ -842,6 +842,177 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 }
 .footer .wrapper .footer-content-box .footer-content:last-child .footer-logos > img:nth-child(2) {
 	margin-right: 3rem;
+}
+/* General styles for form*/
+.modal-form-wrapper	{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+	background: #6B6B6B;
+	overflow-y: auto;
+}
+.modal-form-wrapper .form-body {
+	background: #f3f3f3;
+	max-width: 70rem;
+	width: 100%;
+	padding: 6rem 7rem 6rem;
+	max-height: 90vh;
+	overflow: auto;
+	position: relative;
+}
+.modal-form-wrapper .form-body .icon-close-button {
+	position: absolute;
+	top: 3rem;
+	right: 3rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #000;
+}
+.form-heading {
+	font-size: 2.4rem;
+	line-height: 3.8rem;
+	font-weight: 800;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	margin-bottom: 3.3rem;
+}
+.modal-form-wrapper .form-body .modal-form .form-paragraph {
+	color: var(--accent-color);
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 2rem;
+}
+.form-group-input{
+	min-width: 25rem;
+	padding: 1.5rem;
+	color: #000;
+	border: .1rem solid #707070;
+	border-radius: 0;
+	width: 100%;
+}
+.modal-form-wrapper .form-body .modal-form .form-group .form-group-input {
+	display: none;
+}
+.modal-form-wrapper .form-body .modal-form .form-group .form-group-label {
+	display: flex;
+	align-items: center;
+	border: .1rem solid #707070;
+	background: #fff;
+	padding: 1.4rem 1.2rem 1.4rem 4rem;
+	position: relative;
+}
+.modal-form-wrapper .form-body .modal-form .form-group .form-group-label .form-group-radio-button {
+	height: 2.2rem;
+	width: 2.2rem;
+	border: .2rem solid var(--accent-color);
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	left: 1.2rem;
+	top: 1.3rem;
+	cursor: pointer;
+}
+.modal-form-wrapper .form-body .modal-form .form-group .form-group-label .form-group-radio-button::after {
+	content: "";
+	display: block;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--accent-color);
+	opacity: 0;
+	transition: opacity .2s;
+}
+.modal-form-wrapper .form-body .modal-form .form-group .form-group-input:checked ~ .form-group-label .form-group-radio-button::after {
+	opacity: 1;
+}
+.modal-form-wrapper .form-body .modal-form .form-group:nth-of-type(1) {
+	margin-top: 2rem;
+}
+.modal-form-wrapper .form-body .modal-form > .form-group:not(:nth-of-type(3)) {
+	margin-bottom: 1.5rem;
+}
+.modal-form-wrapper .form-body .modal-form .form-attention {
+	margin-top: 2rem;
+}
+.modal-form-wrapper .form-body .modal-form .form-bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5rem;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.6rem;
+}
+.modal-form-wrapper .form-body .modal-form .form-bottom .icon-right-arrow {
+	margin-left: 2.8rem;
+}
+/* Form-2 styles */
+.form-2 .form-body .modal-form .form-bottom .button-box {
+	display: flex;
+}
+.form-2 .form-body .modal-form .form-bottom .button-box .form-button {
+	padding: 1rem 1.8rem;
+}
+.form-2 .form-body .modal-form .form-bottom .button-box .form-button:first-child {
+	margin-right: 1rem;
+	background-color: #DCDCDC;
+	color: #9B9B9B;
+}
+.form-2 .form-body .modal-form .form-bottom .button-box .form-button:first-child .icon-right-arrow {
+	transform: rotate(180deg);
+	margin-right: 2.8rem;
+}
+.form-2 .form-body .modal-form .form-bottom .button-box .form-button:first-child .icon-right-arrow::before {
+	color: #9B9B9B;
+}
+/* form-3 styles */
+.form-3 .form-body .modal-form {
+	display: flex;
+	flex-direction: column;
+}
+.form-3 .form-body .modal-form .form-group-input {
+	margin-bottom: 1.5rem;
+}
+.form-3 .form-body .modal-form .form-button-main-box .form-button-main {
+	min-width: 100%;
+	justify-content: center;
+}
+.form-3 .form-body .modal-form .form-bottom .form-button {
+	padding: 1rem 1.8rem;
+	background-color: #DCDCDC;
+	color: #9B9B9B;
+}
+.form-3 .form-body .modal-form .form-bottom .form-button .icon-right-arrow {
+	transform: rotate(180deg);
+	margin-right: 2.8rem;
+}
+.form-3 .form-body .modal-form .form-bottom .form-button .icon-right-arrow::before {
+	color: #9B9B9B;
+}
+/* SUCCESS FORM */
+.form-success .form-body {
+	background-color: var(--accent-color);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 60rem;
+}
+.form-success .form-body .icon-box {
+	font-size: 4rem;
+	margin-bottom: 3.89rem;
 }
 /* MEDIA */
 @media screen and (max-width: 1275px) {
