@@ -1,14 +1,15 @@
 "use strict";
 
 const clickButtonForm = document.querySelectorAll('.click-button-form');
+const closeModal = document.querySelectorAll('.close-modal');
 const form1 = document.querySelector('.form-1');
 const form2 = document.querySelector('.form-2');
 const form3 = document.querySelector('.form-3');
 const form4 = document.querySelector('.form-4');
 const inputRadio = document.querySelectorAll('input[name="form-check"]');
 const nextBtn = document.querySelector('.next-button');
-const inputText = document.querySelector('input[type="text"]');
-const prevBtn = document.querySelectorAll('.previous-button');
+const modal = document.querySelectorAll('.modal-form-wrapper');
+// const modalForm = document.querySelectorAll('.form-body');
 
 const buttonArray = [].forEach.call(clickButtonForm, function(el){
 	el.addEventListener('click', function (e) {
@@ -16,12 +17,27 @@ const buttonArray = [].forEach.call(clickButtonForm, function(el){
 	})
 });
 
+const closeButtonArray = [].forEach.call(closeModal, function(el){
+	el.addEventListener('click', function (e) {
+		form1.style.display = 'none';
+		form2.style.display = 'none';
+		form3.style.display = 'none';
+		form4.style.display = 'none';
+	})
+});
+
+// const closePopup = [].forEach.call(modal, function(el) {
+// 	el.addEventListener('click', function (e) {
+// 		modalForm.style.display = 'none';
+// 	})
+// });
+
+
 const inputCheck = [].forEach.call(inputRadio, function(el){
 	el.addEventListener('click', function (e) {
 		nextBtn.removeAttribute('disabled');
 	})
 });
-
 
 form1.querySelector('.form-bottom button').onclick = function () {
 	form1.style.display = 'none';

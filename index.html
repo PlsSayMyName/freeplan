@@ -363,11 +363,11 @@
 						</h2>
 						<form action="#" method="post" class="form">
 							<div class="form-group">
-								<input type="text" class="form-input" placeholder="Ваше имя" id="name" required>
+								<input type="text" class="form-input" placeholder="Ваше имя" id="name-1" required>
 								<label for="name" class="form-label">Ваше имя</label>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-input" placeholder="Ваш e-mail / телефон" id="email-number" required>
+								<input type="text" class="form-input" placeholder="Ваш e-mail / телефон" id="email-number-1" required>
 								<label for="email-number" class="form-label">Ваш e-mail / телефон</label>
 							</div>
 							<div class="form-group">
@@ -433,11 +433,11 @@
 						</h2>
 						<form action="#" method="post" class="form">
 							<div class="form-group">
-								<input type="text" class="form-input" placeholder="Ваше имя" id="name" required>
+								<input type="text" class="form-input" placeholder="Ваше имя" id="name-2" required>
 								<label for="name" class="form-label">Ваше имя</label>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-input" placeholder="Ваш e-mail / телефон" id="email-number" required>
+								<input type="text" class="form-input" placeholder="Ваш e-mail / телефон" id="email-number-2" required>
 								<label for="email-number" class="form-label">Ваш e-mail / телефон</label>
 							</div>
 							<div class="form-group">
@@ -508,7 +508,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="modal-form-wrapper form-1" style="display: none;">
+	<div class="modal-form-wrapper form-1" id="modal-wrapper" style="display: none;">
 		<div class="form-body">
 			<span class="icon-close-button close-modal"></span>
 			<form action="#" class="modal-form">
@@ -536,7 +536,7 @@
 				</div>
 				<div class="form-bottom">
 					<span>ШАГ 1 ИЗ 3</span>
-					<button disabled id="next" type="button" class="button form-button next-button">Вперед <span class="icon-right-arrow"></span></button>
+					<button disabled id="next-2" type="button" class="button form-button next-button">Вперед <span class="icon-right-arrow"></span></button>
 				</div>
 			</form>
 		</div>
@@ -547,7 +547,7 @@
 			<form action="#" class="modal-form modal-form-1">
 				<h2 class="form-heading">РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕГО ДИЗАЙН-ПРОЕКТА</h2>
 				<span class="form-paragraph">2. Укажите площадь помещений дизайн-проекта, м2</span>
-				<input onkeyup="next.disabled = this.value ? false : 'disabled';" id="number" class="form-group-input" type="text" name="area" placeholder="Площадь помещения, м2">
+				<input onkeyup="next1.disabled = this.value ? false : 'disabled';" id="number" class="form-group-input" type="text" name="area" placeholder="Площадь помещения, м2">
 				<div class="attention form-attention">
 					<p class="attention-text">
 						*Мы не передаем ваши персональные данные третьим лицам
@@ -560,7 +560,7 @@
 					<span>ШАГ 2 ИЗ 3</span>
 					<div class="button-box">
 						<button type="button" class="button form-button previous-button"><span class="icon-right-arrow"></span>Назад</button>
-						<button disabled id="next" name="nextbtn" type="button" class="button form-button next-button">Вперед<span class="icon-right-arrow"></span></button>
+						<button disabled id="next1" name="nextbtn" type="button" class="button form-button next-button">Вперед<span class="icon-right-arrow"></span></button>
 					</div>
 			</div>
 			</form>
@@ -572,10 +572,10 @@
 			<form action="#" class="modal-form">
 				<h2 class="form-heading">РАССЧИТАЙТЕ СТОИМОСТЬ ВАШЕГО ДИЗАЙН-ПРОЕКТА</h2>
 				<span class="form-paragraph">3. Ваши данные</span>
-				<input onkeyup="check();" id="name" class="form-group-input" type="text" name="your-name" placeholder="Ваше имя">
-				<input onkeyup="check();" id="mobile-number" class="form-group-input" type="text" name="phone" placeholder="Ваш e-mail / телефон">
+				<input onkeyup="submit.disabled = this.value &&  document.getElementById('mobile-number').value ? false : 'disabled';"  id="name-3" class="form-group-input form-group-input-name" type="text" name="your-name" placeholder="Ваше имя">
+				<input onkeyup="submit.disabled = this.value &&  document.getElementById('name-3').value ? false : 'disabled';" id="mobile-number" class="form-group-input form-group-input-phone" type="text" name="phone" placeholder="Ваш e-mail / телефон">
 				<div class="form-button-main-box">
-						<button disabled id="next" type="submit" class="button form-button-main success-button">РАССЧИТАТЬ СТОИМОСТЬ</button>
+						<button disabled id="submit" type="submit" class="button form-button-main success-button">РАССЧИТАТЬ СТОИМОСТЬ</button>
 				</div>
 				<div class="form-bottom">
 					<span>ШАГ 3 ИЗ 3</span>
