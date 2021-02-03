@@ -112,7 +112,6 @@ body {
 }
 .icon-office-block:before {
   content: "\e90a";
-  color: #fff;
 }
 .icon-papper:before {
   content: "\e90b";

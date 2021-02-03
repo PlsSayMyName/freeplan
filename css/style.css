@@ -512,10 +512,10 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 .questions .wrapper .card-box a:nth-child(3) .card .icon-box {
 	margin-top: 1rem;
 }
-.questions .wrapper .card-box a:nth-child(3) .card .icon-heading {
+.questions .wrapper .card-box a:nth-child(3) .card .card-heading {
 	margin-top: -1rem;
 }
-.questions .wrapper .card-box a .card .icon-heading {
+.questions .wrapper .card-box a .card .card-heading {
 	font-size: 1.6rem;
 	font-weight: 800;
 	line-height: 2.2rem;
@@ -526,10 +526,10 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 	padding-bottom: .8rem;
 	padding-top: 4rem;
 }
-.questions .wrapper .card-box a:nth-child(1) .card .icon-heading {
+.questions .wrapper .card-box a:nth-child(1) .card .card-heading {
 	border-color: var(--blue-color);
 }
-.questions .wrapper .card-box a:nth-child(3) .card .icon-heading {
+.questions .wrapper .card-box a:nth-child(3) .card .card-heading {
 	border-color: var(--purple-color);
 }
 .questions .wrapper .card-box a:nth-child(1):hover .card {
@@ -1122,6 +1122,9 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 	.footer .wrapper .footer-content-box .footer-content .footer-nav-wrapper {
 		grid-template-columns: 11rem 13.5rem 24.5rem;
 		align-items: center;
+	}
+	.our-achievements .wrapper .post-wrapper {
+		justify-content: center;
 	}
 }
 @media screen and (max-width: 630px) {
