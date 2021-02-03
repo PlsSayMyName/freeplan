@@ -8,15 +8,15 @@ const form3 = document.querySelector('.form-3');
 const form4 = document.querySelector('.form-4');
 const inputRadio = document.querySelectorAll('input[name="form-check"]');
 const nextBtn = document.querySelector('.next-button');
-const modal = document.querySelectorAll('.modal-form-wrapper');
-// const modalForm = document.querySelectorAll('.form-body');
 
+// SHOW MODAL
 const buttonArray = [].forEach.call(clickButtonForm, function(el){
 	el.addEventListener('click', function (e) {
 		form1.style.display = 'flex';
 	})
 });
 
+// CLOSE MODAL
 const closeButtonArray = [].forEach.call(closeModal, function(el){
 	el.addEventListener('click', function (e) {
 		form1.style.display = 'none';
@@ -26,13 +26,7 @@ const closeButtonArray = [].forEach.call(closeModal, function(el){
 	})
 });
 
-// const closePopup = [].forEach.call(modal, function(el) {
-// 	el.addEventListener('click', function (e) {
-// 		modalForm.style.display = 'none';
-// 	})
-// });
-
-
+// BUTTON STATEMENTS
 const inputCheck = [].forEach.call(inputRadio, function(el){
 	el.addEventListener('click', function (e) {
 		nextBtn.removeAttribute('disabled');
