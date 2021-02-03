@@ -1,59 +1,67 @@
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-	outline: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  outline: none;
 }
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.3rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
 }
 .wrapper {
-	max-width: 116rem;
-	margin: 0 auto;
-	width: 100%;
+  max-width: 116rem;
+  margin: 0 auto;
+  width: 100%;
 }
 .wrapper-right {
-	margin-left: calc((100% - 1160px) / 2);
+  margin-left: calc((100% - 1160px) / 2);
 }
 .button {
-	color: #fff;
-	background-color: var(--accent-color);
-	text-transform: uppercase;
-	padding: 1.5rem 3rem 1.6rem 2.8rem;
-	border: none;
-	font-weight: 800;
-	line-height: 1.8rem;
-	letter-spacing: .15rem;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	max-width: max-content;
-	text-decoration: none;
+  color: #fff;
+  background-color: var(--accent-color);
+  text-transform: uppercase;
+  padding: 1.5rem 3rem 1.6rem 2.8rem;
+  border: none;
+  font-weight: 800;
+  line-height: 1.8rem;
+  letter-spacing: .15rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  text-decoration: none;
 }
-.button:disabled, button:disabled:hover {
-	background: #DCDCDC;
+.button:disabled,
+button:disabled:hover {
+  background: #DCDCDC;
 }
 .button .icon-right-arrow {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 :root {
-	--accent-color: #EC8211;
-	--green-color: #87C34B;
-	--purple-color: #AD3572;
-	--blue-color: #1E98C0;
+  --accent-color: #EC8211;
+  --green-color: #87C34B;
+  --purple-color: #AD3572;
+  --blue-color: #1E98C0;
 }
-
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/IcoMoon/icomoon.eot?jrprct');
-  src:  url('../fonts/IcoMoon/icomoon.eot?jrprct#iefix') format('embedded-opentype'),
+  src: url('../fonts/IcoMoon/icomoon.eot?jrprct');
+  src: url('../fonts/IcoMoon/icomoon.eot?jrprct#iefix') format('embedded-opentype'),
     url('../fonts/IcoMoon/icomoon.ttf?jrprct') format('truetype'),
     url('../fonts/IcoMoon/icomoon.woff?jrprct') format('woff'),
     url('../fonts/IcoMoon/icomoon.svg?jrprct#icomoon') format('svg');
@@ -61,8 +69,8 @@ body {
   font-style: normal;
   font-display: block;
 }
-
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -76,7 +84,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-building:before {
   content: "\e900";
 }
@@ -113,6 +120,7 @@ body {
 .icon-office-block:before {
   content: "\e90a";
 }
+
 .icon-papper:before {
   content: "\e90b";
 }
