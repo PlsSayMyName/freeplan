@@ -476,6 +476,9 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 .our-projects .wrapper .gallery-box .card:hover .description-box {
 	visibility: visible;
 	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 .our-projects .wrapper .gallery-box .card .description-box .card-description {
 	font-weight: 400;
@@ -489,6 +492,15 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 	font-size: 1.5rem;
 	line-height: 2.3rem;
 	letter-spacing: .25rem;
+}
+.our-projects .wrapper .gallery-box .card .corners-box{
+	opacity: 0;
+}
+.our-projects .wrapper .gallery-box .card:hover .corners-box{
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 .our-projects .wrapper .gallery-box .card:hover .corners-box .left-corner-top::before {
 	content: "";
