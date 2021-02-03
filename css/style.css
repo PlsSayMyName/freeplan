@@ -1245,7 +1245,6 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		top: 0;
 	}
 }
-
 @media screen and (max-width: 1230px) {
 	.our-projects .wrapper {
 		display: -webkit-box;
@@ -1260,7 +1259,6 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		flex-direction: column;
 	}
 }
-
 @media screen and (max-width: 1155px) {
 	.call-to-action-1 .wrapper-right,
 	.call-to-action-2 .wrapper-right {
@@ -1270,7 +1268,6 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		padding-right: 3rem;
 	}
 }
-
 @media screen and (max-width: 1110px) {
 	.hero .wrapper-right {
 		overflow: hidden;
@@ -1314,7 +1311,6 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		width: unset;
 	}
 }
-
 @media screen and (max-width: 965px) {
 	.footer .wrapper .footer-content-box {
 		-webkit-box-orient: vertical;
@@ -1326,7 +1322,6 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		border: none;
 	}
 }
-
 @media screen and (max-width: 950px) {
 	.hero .wrapper-right .img-box .wrapper-box {
 		max-height: -webkit-fit-content;
@@ -1334,7 +1329,6 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		max-height: fit-content;
 	}
 }
-
 @media screen and (max-width: 880px) {
 	header .wrapper .inner-wrapper .nav .burger .menu-box {
 		-webkit-box-orient: vertical;
@@ -1358,7 +1352,6 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		margin-top: 0;
 	}
 }
-
 @media screen and (max-width: 660px) {
 	.footer .wrapper {
 		padding-top: 30rem;
@@ -1371,7 +1364,6 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		align-items: center;
 	}
 }
-
 @media screen and (max-width: 630px) {
 	.our-projects .wrapper .gallery-box {
 		grid-template-columns: repeat(auto-fit, 35rem);
@@ -1383,13 +1375,11 @@ header .wrapper .inner-wrapper .nav .burger .menu-box .col:last-child a:nth-chil
 		margin-top: 20rem;
 	}
 }
-
 @media screen and (max-width: 550px) {
 	.footer .wrapper .footer-content-box .footer-content .footer-nav-wrapper {
 		grid-template-columns: repeat(auto-fill, 12rem);
 	}
 }
-
 @media screen and (max-width: 450px) {
 	.hero .wrapper-right,
 	.advantages,
